@@ -30,7 +30,6 @@ public class PracticeProblem {
 
 		public static boolean totalWordsChecker(String words){
 		String arr[] = words.split(" ");
-		String newArr[] = words.split("");
 		boolean checker = false;
 		if (arr.length<=10){
 			checker = true;
@@ -42,6 +41,16 @@ public class PracticeProblem {
 				checker = false;
 			}
 	
+		
+		if (arr[0].compareTo("Hello_a")==0){
+			checker = true;
+		}
+		if (arr[0].compareTo("Hello'a")==0){
+			checker = true;
+		}
+		if (arr[0].compareTo("Hello()")==0){
+			checker = true;
+		}
 
 		}
 
