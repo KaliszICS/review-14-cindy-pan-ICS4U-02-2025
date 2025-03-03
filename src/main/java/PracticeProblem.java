@@ -1,5 +1,5 @@
 public class PracticeProblem {
-	final static int MAXIMUM = 0;
+	final static int MAXIMUM = 10;
 	public static int calculate(int num, int numTwo, char ops){
 		int value = ops;
 		int output =0;
@@ -32,7 +32,7 @@ public class PracticeProblem {
 		String help = "[,\\ \\/ \\; \\ \\( \\[ \\{ \\< \\- \\ ]";
 		String arr[] = words.split(help);
 		boolean checker = false;
-		if (arr.length<=10){
+		if (arr.length<=MAXIMUM){
 			checker = true;
 		}
 		
