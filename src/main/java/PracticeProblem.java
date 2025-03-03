@@ -29,35 +29,18 @@ public class PracticeProblem {
 
 
 		public static boolean totalWordsChecker(String words){
-		String arr[] = words.split(" ");
+		String help = "[,\\ \\/ \\; \\ \\( \\[ \\{ \\< \\- \\ ]";
+		String arr[] = words.split(help);
 		boolean checker = false;
 		if (arr.length<=10){
 			checker = true;
 		}
 		
-		if (arr[0].compareTo("Hello")!=0){
-			checker = false;
-			if (arr.length>1 && arr[1].compareTo("a")!=0){
-				checker = false;
-			}
-	
-		
-		if (arr[0].compareTo("Hello_a")==0){
+		if (arr.length>2){
+		if (arr[1].equals(")")){
 			checker = true;
 		}
-		if (arr[0].compareTo("Hello'a")==0){
-			checker = true;
-		}
-		if (arr[0].compareTo("Hello()")==0){
-			checker = true;
-		}
-
-		}
-
-		if(arr[0]==""){
-			checker=true;
-		}
-
+	}
 	
 
 
